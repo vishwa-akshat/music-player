@@ -1,13 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Music Player</title>
+    </head>
+    <body>
+        <div id="app">
+            <div id="player">
+                <audio id="audio" src=""></audio>
+                <img src="" id="cover" alt="cover" />
+                <p id="title"></p>
+                <p id="artist"></p>
+                <div id="progress-wrapper">
+                    <div id="song-duration-wrapper">
+                        <p class="song-duration" id="duration-current">00:00</p>
+                        <p class="song-duration" id="duration-full">00:00</p>
+                    </div>
+                    <input
+                        type="range"
+                        id="progress-bar"
+                        name="progress-bar"
+                        min="0"
+                        max="100"
+                        value="10"
+                    />
+                </div>
+                <div id="controls">
+                    <div id="prev">
+                        <img
+                            src="./assets/Stop_and_play_fill-1.svg"
+                            alt="prev"
+                        />
+                    </div>
+                    <div id="play">
+                        <img
+                            id="play-img"
+                            src="./assets/Play_fill.svg"
+                            alt="prev"
+                        />
+                    </div>
+                    <div id="next">
+                        <img src="./assets/Stop_and_play_fill.svg" alt="prev" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
 </html>
