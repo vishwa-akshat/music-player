@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/music-player/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Music Player</title>
+      <script type="module" crossorigin src="/music-player/assets/index-VrTJxi0Y.js"></script>
+      <link rel="stylesheet" crossorigin href="/music-player/assets/index-DaCKXa6f.css">
+    </head>
+    <body>
+        <div id="app">
+            <div id="player">
+                <audio id="audio" src=""></audio>
+                <img src="" id="cover" alt="cover" />
+                <p id="title"></p>
+                <p id="artist"></p>
+                <div id="progress-wrapper">
+                    <div id="song-duration-wrapper">
+                        <p class="song-duration" id="duration-current">00:00</p>
+                        <p class="song-duration" id="duration-full">00:00</p>
+                    </div>
+                    <input
+                        type="range"
+                        id="progress-bar"
+                        name="progress-bar"
+                        min="0"
+                        max="100"
+                        value="10"
+                    />
+                </div>
+                <div id="controls">
+                    <div id="prev">
+                        <img
+                            src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.8136%2014.2517L23.6953%2010.9841C25.0284%2010.2435%2026.6666%2011.2074%2026.6666%2012.7324V19.2676C26.6666%2020.7926%2025.0284%2021.7566%2023.6953%2021.016L17.8136%2017.7483C16.442%2016.9863%2016.442%2015.0137%2017.8136%2014.2517Z'%20fill='%234D5562'/%3e%3cpath%20d='M10.6666%2022.6667L10.6666%209.33335'%20stroke='%234D5562'%20stroke-width='2'%20stroke-linecap='round'/%3e%3cpath%20d='M5.33325%2022.6667L5.33325%209.33335'%20stroke='%234D5562'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e"
+                            alt="prev"
+                        />
+                    </div>
+                    <div id="play">
+                        <img
+                            id="play-img"
+                            src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.941%2014.244L14.119%2010.236C12.686%209.50176%2011%2010.5696%2011%2012.2115V19.7885C11%2021.4304%2012.686%2022.4982%2014.119%2021.764L21.941%2017.756C23.353%2017.0325%2023.353%2014.9675%2021.941%2014.244Z'%20fill='%23E5E7EB'/%3e%3c/svg%3e"
+                            alt="prev"
+                        />
+                    </div>
+                    <div id="next">
+                        <img src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14.1864%2014.2517L8.30466%2010.9841C6.9716%2010.2435%205.33337%2011.2074%205.33337%2012.7324V19.2676C5.33337%2020.7926%206.9716%2021.7566%208.30466%2021.016L14.1864%2017.7483C15.558%2016.9863%2015.558%2015.0137%2014.1864%2014.2517Z'%20fill='%234D5562'/%3e%3cpath%20d='M21.3334%2022.6667L21.3334%209.33335'%20stroke='%234D5562'%20stroke-width='2'%20stroke-linecap='round'/%3e%3cpath%20d='M26.6667%2022.6667L26.6667%209.33335'%20stroke='%234D5562'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="prev" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
