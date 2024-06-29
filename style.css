@@ -24,7 +24,7 @@ body {
 #app {
     display: grid;
     place-items: center;
-    background-image: url("./assets/bg.jpg");
+    background-image: url("bg.jpg");
     height: 100vh;
 }
 
